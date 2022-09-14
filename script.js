@@ -107,7 +107,7 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = '<h1>${count}</h1>';
+    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
     if (count == 0) {
@@ -124,7 +124,6 @@ const start = () => {
 };
 
 // START Countdown
-// document.getElementById( "myBtn" )
 document.getElementById("startBtn").addEventListener( "click", start );
 
 // If history exists, show it
