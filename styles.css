@@ -61,13 +61,13 @@ body {
 }
 
 #result {
-  
+
   /* position: fixed;
   top: 10%; 
   left: 10%; */
-  
+
   position: fixed;
-  top: 25%; 
+  top: 25%;
   left: 25%;
   transform: translate(50%, 50%);
   height: 250px;
@@ -188,6 +188,7 @@ button {
   top: 0;
 }
 
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: auto;
@@ -198,3 +199,4 @@ button {
     flex-direction: column;
   }
 }
+

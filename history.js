@@ -5,17 +5,21 @@ function addHistory(questionText, timeTaken, errorCount) {
   newRow.classList.add("card");
 
   newRow.innerHTML = `
-  <h3>${questionText}</h3>
+  <div class="historyRow">
+   <h3>${questionText}</h3>
   <div>
   <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
   <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
   </div>
+
+  </div>
+ 
   `;
 
   histories.appendChild(newRow);
 
   let previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
-  previousTests.push({ questionText, timeTaken, errorCount });
+  previousTests.push({ questionText, timeTaken, errorCount});
   localStorage.setItem("testHistory", JSON.stringify(previousTests));
 
   displayHistory();

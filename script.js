@@ -89,7 +89,7 @@ const gameOver = () => {
 
   // restart everything
   startTime = null;
-  errorCount = 0;
+  errorCount =0;
   userText = "";
   display.classList.add("inactive");
 };
@@ -130,7 +130,7 @@ const start = () => {
 };
 
 // START Countdown
-// dcou
+// document.getElementByID and startBtn fixed
 document.getElementById("startBtn").addEventListener( "click", start );
 
 // If history exists, show it
