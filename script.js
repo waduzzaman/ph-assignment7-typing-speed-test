@@ -106,7 +106,9 @@ const start = () => {
   let count = 3;
   countdownOverlay.style.display = "flex";
 
-  const startCountdown = setInterval(() => {
+  const startCountdown = setInterval( () =>
+  {
+    // template literal added instead of single quote in the below link to fix the count down 
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
@@ -128,6 +130,7 @@ const start = () => {
 };
 
 // START Countdown
+// dcou
 document.getElementById("startBtn").addEventListener( "click", start );
 
 // If history exists, show it
